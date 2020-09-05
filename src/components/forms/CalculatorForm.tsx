@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import { green } from "@material-ui/core/colors";
+import { green, red } from "@material-ui/core/colors";
 
 interface IProps {}
 
@@ -45,18 +45,42 @@ export const CalculatorForm = React.memo<IProps>((props) => {
   const [hasResult, setHasResult] = useState(false);
   const [result, setResult] = useState(0);
 
-  const submit = useCallback((formData: TFormData) => {
-    console.log({ formData });
+  const calculatedSavings = useCallback((formData: TFormData) => {
+    // Parse to int
     const cullinRate = parseInt(formData.cullinRate);
     const herdSize = parseInt(formData.herdSize);
     const mastitisPrevalenceValue = parseInt(formData.mastitisPrevalenceValue);
     const rawMilkPrice = parseInt(formData.rawMilkPrice);
 
-    const calculatedResult = 15;
+    // Calculate
+    const infectedCows = Math.round((mastitisPrevalenceValue / 100) * herdSize);
+    const culledCows = Math.round((cullinRate / 100) * herdSize);
+    const litersLostToInfection = infectedCows * 3.4 * 150;
+    const potentialLose = litersLostToInfection * rawMilkPrice;
+    const totalCull = culledCows * 8000;
+    const totalLoss = totalCull + potentialLose;
+    const applicatorsNeeded = Math.round(infectedCows / 60);
+    const totalApplicatorsCost = applicatorsNeeded * 9000;
+    const totalFarmerInvestment = totalApplicatorsCost + 50000;
+    const reductionOfLosses = totalLoss * 0.7;
+    const newTotalLoss = totalLoss - reductionOfLosses + totalFarmerInvestment;
 
-    setHasResult(true);
-    setResult(calculatedResult);
+    const savings = totalLoss - newTotalLoss;
+
+    return savings;
   }, []);
+
+  const submit = useCallback(
+    (formData: TFormData) => {
+      const calculatedResult = calculatedSavings(formData);
+
+      setHasResult(true);
+      setResult(calculatedResult);
+    },
+    [calculatedSavings]
+  );
+
+  const farmerWillSaveMoney = result > 0;
 
   return (
     <>
@@ -171,8 +195,11 @@ export const CalculatorForm = React.memo<IProps>((props) => {
             <Typography variant={"h4"} color={"secondary"}>
               Estimated savings :
             </Typography>
-            <Typography variant={"h4"} style={{ color: green[400] }}>
-              ₪{result.toLocaleString()}
+            <Typography
+              variant={"h4"}
+              style={{ color: farmerWillSaveMoney ? green[400] : red[400] }}
+            >
+              ₪ {result.toLocaleString()}
             </Typography>
           </div>
         )}
