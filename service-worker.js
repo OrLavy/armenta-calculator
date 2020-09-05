@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/armenta-calculator/precache-manifest.db59f460025fc12de3fb1a17bb386bb9.js"
+  "/armenta-calculator/precache-manifest.82e64374cadc23beb51b0f6cd2de4715.js"
 );
 
 self.addEventListener('message', (event) => {

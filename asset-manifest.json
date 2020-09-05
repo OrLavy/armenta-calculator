@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/armenta-calculator/static/css/main.2f112909.chunk.css",
-    "main.js": "/armenta-calculator/static/js/main.98e03947.chunk.js",
-    "main.js.map": "/armenta-calculator/static/js/main.98e03947.chunk.js.map",
+    "main.js": "/armenta-calculator/static/js/main.614b7f17.chunk.js",
+    "main.js.map": "/armenta-calculator/static/js/main.614b7f17.chunk.js.map",
     "runtime-main.js": "/armenta-calculator/static/js/runtime-main.fc0791f6.js",
     "runtime-main.js.map": "/armenta-calculator/static/js/runtime-main.fc0791f6.js.map",
-    "static/js/2.d0a2f2dd.chunk.js": "/armenta-calculator/static/js/2.d0a2f2dd.chunk.js",
-    "static/js/2.d0a2f2dd.chunk.js.map": "/armenta-calculator/static/js/2.d0a2f2dd.chunk.js.map",
+    "static/js/2.dbf85bdc.chunk.js": "/armenta-calculator/static/js/2.dbf85bdc.chunk.js",
+    "static/js/2.dbf85bdc.chunk.js.map": "/armenta-calculator/static/js/2.dbf85bdc.chunk.js.map",
     "index.html": "/armenta-calculator/index.html",
-    "precache-manifest.db59f460025fc12de3fb1a17bb386bb9.js": "/armenta-calculator/precache-manifest.db59f460025fc12de3fb1a17bb386bb9.js",
+    "precache-manifest.82e64374cadc23beb51b0f6cd2de4715.js": "/armenta-calculator/precache-manifest.82e64374cadc23beb51b0f6cd2de4715.js",
     "service-worker.js": "/armenta-calculator/service-worker.js",
     "static/css/main.2f112909.chunk.css.map": "/armenta-calculator/static/css/main.2f112909.chunk.css.map",
-    "static/js/2.d0a2f2dd.chunk.js.LICENSE.txt": "/armenta-calculator/static/js/2.d0a2f2dd.chunk.js.LICENSE.txt",
+    "static/js/2.dbf85bdc.chunk.js.LICENSE.txt": "/armenta-calculator/static/js/2.dbf85bdc.chunk.js.LICENSE.txt",
     "static/media/armenta_logo.jpeg": "/armenta-calculator/static/media/armenta_logo.2465901b.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.fc0791f6.js",
-    "static/js/2.d0a2f2dd.chunk.js",
+    "static/js/2.dbf85bdc.chunk.js",
     "static/css/main.2f112909.chunk.css",
-    "static/js/main.98e03947.chunk.js"
+    "static/js/main.614b7f17.chunk.js"
   ]
 }
