@@ -19,7 +19,7 @@ export const baseTheme = responsiveFontSizes(
       primary: { main: "#09142c" },
       secondary: { main: "#00A1CB" },
       background: {
-        default: "#0a0f25",
+        // default: "#0a0f25",
         // paper: "#192a45",
         // paper: "#09142c",
       },

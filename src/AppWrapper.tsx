@@ -7,15 +7,18 @@ import {
   ThemeProvider,
 } from "@material-ui/core/styles";
 import { baseTheme } from "./theme/Theme";
+import { BrowserRouter as Router } from "react-router-dom";
 
 interface IProps {}
 
 export const AppWrapper = React.memo<IProps>((props) => {
   return (
-    <StylesProvider injectFirst>
-      <ThemeProvider theme={baseTheme}>
-        <App /> <CssBaseline />
-      </ThemeProvider>
-    </StylesProvider>
+    <Router>
+      <StylesProvider injectFirst>
+        <ThemeProvider theme={baseTheme}>
+          <App /> <CssBaseline />
+        </ThemeProvider>
+      </StylesProvider>
+    </Router>
   );
 });
