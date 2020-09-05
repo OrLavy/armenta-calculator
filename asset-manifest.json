@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/armenta-calculator/static/css/main.5f361e03.chunk.css",
-    "main.js": "/armenta-calculator/static/js/main.410c26ce.chunk.js",
-    "main.js.map": "/armenta-calculator/static/js/main.410c26ce.chunk.js.map",
+    "main.css": "/armenta-calculator/static/css/main.2f112909.chunk.css",
+    "main.js": "/armenta-calculator/static/js/main.98e03947.chunk.js",
+    "main.js.map": "/armenta-calculator/static/js/main.98e03947.chunk.js.map",
     "runtime-main.js": "/armenta-calculator/static/js/runtime-main.fc0791f6.js",
     "runtime-main.js.map": "/armenta-calculator/static/js/runtime-main.fc0791f6.js.map",
-    "static/js/2.847799e8.chunk.js": "/armenta-calculator/static/js/2.847799e8.chunk.js",
-    "static/js/2.847799e8.chunk.js.map": "/armenta-calculator/static/js/2.847799e8.chunk.js.map",
+    "static/js/2.d0a2f2dd.chunk.js": "/armenta-calculator/static/js/2.d0a2f2dd.chunk.js",
+    "static/js/2.d0a2f2dd.chunk.js.map": "/armenta-calculator/static/js/2.d0a2f2dd.chunk.js.map",
     "index.html": "/armenta-calculator/index.html",
-    "precache-manifest.670f25771645eadf8bf852029a71f69a.js": "/armenta-calculator/precache-manifest.670f25771645eadf8bf852029a71f69a.js",
+    "precache-manifest.db59f460025fc12de3fb1a17bb386bb9.js": "/armenta-calculator/precache-manifest.db59f460025fc12de3fb1a17bb386bb9.js",
     "service-worker.js": "/armenta-calculator/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/armenta-calculator/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.847799e8.chunk.js.LICENSE.txt": "/armenta-calculator/static/js/2.847799e8.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/armenta-calculator/static/media/logo.5d5d9eef.svg"
+    "static/css/main.2f112909.chunk.css.map": "/armenta-calculator/static/css/main.2f112909.chunk.css.map",
+    "static/js/2.d0a2f2dd.chunk.js.LICENSE.txt": "/armenta-calculator/static/js/2.d0a2f2dd.chunk.js.LICENSE.txt",
+    "static/media/armenta_logo.jpeg": "/armenta-calculator/static/media/armenta_logo.2465901b.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.fc0791f6.js",
-    "static/js/2.847799e8.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.410c26ce.chunk.js"
+    "static/js/2.d0a2f2dd.chunk.js",
+    "static/css/main.2f112909.chunk.css",
+    "static/js/main.98e03947.chunk.js"
   ]
 }
