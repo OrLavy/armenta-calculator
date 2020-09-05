@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import {AppARwpper} from "./AppWrapper";
+import {AppWrapper} from "./AppWrapper";
 
 ReactDOM.render(
   <React.StrictMode>
-    <AppARwpper />
+    <AppWrapper />
   </React.StrictMode>,
   document.getElementById('root')
 );

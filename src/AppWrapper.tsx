@@ -5,6 +5,6 @@ interface IProps {
 
 }
 
-export const AppARwpper = React.memo<IProps>(props => {
+export const AppWrapper = React.memo<IProps>(props => {
    return <App/>
 });
