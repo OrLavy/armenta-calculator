@@ -30,10 +30,13 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
     width: "90%",
     maxWidth: "90%",
+    display: "flex",
     justifyContent: "center",
+    justifyItems: "center",
   },
   logo: {
-    width: "10rem",
+    // width: "13rem",
+    width: "calc(min(15rem, 80%))",
   },
   link: {
     color: "#2B2B2B", // DEV_NOTE : Taken from armenta
@@ -51,7 +54,13 @@ export const Header = React.memo<IProps>((props) => {
   return (
     <AppBar position="fixed" data-testid="header" className={classes.appBar}>
       <Toolbar className={classes.toolbar}>
-        <NavLink to="/">
+        <NavLink
+          to="/"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
           <img className={classes.logo} src={Logo} alt="Armenta" />
           {/*<Link*/}
           {/*  // @ts-ignore*/}
