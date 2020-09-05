@@ -1,16 +1,22 @@
 import React, { useCallback, useState } from "react";
 import { useForm } from "react-hook-form";
-import { Button, InputAdornment, TextField } from "@material-ui/core";
+import {
+  Button,
+  InputAdornment,
+  TextField,
+  Typography,
+} from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import { green } from "@material-ui/core/colors";
 
 interface IProps {}
 
 type TFormData = {
-  herdSize: number;
-  mastitisPrevalenceValue: number;
-  cullinRate: number;
+  herdSize: string;
+  mastitisPrevalenceValue: string;
+  cullinRate: string;
   // In NIS
-  rawMilkPrice: number;
+  rawMilkPrice: string;
 };
 
 const useStyles = makeStyles((theme) => ({
@@ -36,8 +42,20 @@ export const CalculatorForm = React.memo<IProps>((props) => {
   const classes = useStyles();
   const { register, handleSubmit, errors } = useForm<TFormData>();
 
+  const [hasResult, setHasResult] = useState(false);
+  const [result, setResult] = useState(0);
+
   const submit = useCallback((formData: TFormData) => {
     console.log({ formData });
+    const cullinRate = parseInt(formData.cullinRate);
+    const herdSize = parseInt(formData.herdSize);
+    const mastitisPrevalenceValue = parseInt(formData.mastitisPrevalenceValue);
+    const rawMilkPrice = parseInt(formData.rawMilkPrice);
+
+    const calculatedResult = 15;
+
+    setHasResult(true);
+    setResult(calculatedResult);
   }, []);
 
   return (
@@ -139,6 +157,25 @@ export const CalculatorForm = React.memo<IProps>((props) => {
         >
           Calculate Savings
         </Button>
+
+        {hasResult && (
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <br />
+            <br />
+            <Typography variant={"h4"} color={"secondary"}>
+              Estimated savings :
+            </Typography>
+            <Typography variant={"h4"} style={{ color: green[400] }}>
+              ₪{result.toLocaleString()}
+            </Typography>
+          </div>
+        )}
       </form>
     </>
   );
