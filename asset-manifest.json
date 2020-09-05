@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.5f361e03.chunk.css",
-    "main.js": "/static/js/main.0e43d03a.chunk.js",
-    "main.js.map": "/static/js/main.0e43d03a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.1d383174.js",
-    "runtime-main.js.map": "/static/js/runtime-main.1d383174.js.map",
-    "static/js/2.847799e8.chunk.js": "/static/js/2.847799e8.chunk.js",
-    "static/js/2.847799e8.chunk.js.map": "/static/js/2.847799e8.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.c5103586ab7bc2814d7d2b497c80802e.js": "/precache-manifest.c5103586ab7bc2814d7d2b497c80802e.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.847799e8.chunk.js.LICENSE.txt": "/static/js/2.847799e8.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+    "main.css": "/armenta-calculator/static/css/main.5f361e03.chunk.css",
+    "main.js": "/armenta-calculator/static/js/main.410c26ce.chunk.js",
+    "main.js.map": "/armenta-calculator/static/js/main.410c26ce.chunk.js.map",
+    "runtime-main.js": "/armenta-calculator/static/js/runtime-main.fc0791f6.js",
+    "runtime-main.js.map": "/armenta-calculator/static/js/runtime-main.fc0791f6.js.map",
+    "static/js/2.847799e8.chunk.js": "/armenta-calculator/static/js/2.847799e8.chunk.js",
+    "static/js/2.847799e8.chunk.js.map": "/armenta-calculator/static/js/2.847799e8.chunk.js.map",
+    "index.html": "/armenta-calculator/index.html",
+    "precache-manifest.670f25771645eadf8bf852029a71f69a.js": "/armenta-calculator/precache-manifest.670f25771645eadf8bf852029a71f69a.js",
+    "service-worker.js": "/armenta-calculator/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/armenta-calculator/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.847799e8.chunk.js.LICENSE.txt": "/armenta-calculator/static/js/2.847799e8.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/armenta-calculator/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1d383174.js",
+    "static/js/runtime-main.fc0791f6.js",
     "static/js/2.847799e8.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.0e43d03a.chunk.js"
+    "static/js/main.410c26ce.chunk.js"
   ]
 }
